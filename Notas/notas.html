@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notas</title>
+</head>
+
+<body>
+
+    <form id="formnotas">
+        <input type="text" required name="notaum" id="notaum">
+        <input type="text" name="notadois" id="notadois" required>
+        <button type="submit" id="btnCalcular" class="btn" >Calcular</button>
+    </form>
+
+    <script>
+
+        // Pega o elemento 'notaum' no documento com getElementById
+        let notaum = document.getElementById("notaum");
+
+        // Exibe no console as informações do elemento 'notaum'
+        console.log(notaum);
+
+        // Pega o elemento do documento com querySelector
+        // Pelo Id = #nomedoiddoelemento
+        let notadois = document.querySelector("#notadois");
+        console.log(notadois);
+
+        // Pega o elemento do documento com querySelector
+        // Pela class = .nomedaclassdoelemento
+        let btn = document.querySelector(".btn");
+        console.log(btn);
+
+        // Adiciona um evento de click que dá uma função ao botão
+        btn.addEventListener("click", function(event)
+        {
+            // Para debugar o código
+            //debugger;
+            // Previne que a informação apareça no submit do navegador
+            event.preventDefault();
+            // Mostra o calculo no console
+            console.log((parseFloat(notaum.value) + parseFloat(notadois.value)) / 2);
+        })
+
+    </script>
+
+</body>
+
+</html>
