@@ -25,9 +25,9 @@
 
     <script>
         let contatos = [{ 
-                            nome : 'Kaua',
-                            email : 'kaua.deja@gmail.com',
-                            telefone : '11972084334'
+                            nome : 'Eduardo',
+                            email : 'eduardo.almeida@gmail.com',
+                            telefone : '11999999999'
                         }]
 
         //Crio um objeto a partir do elemento no documento
@@ -57,18 +57,18 @@
                 linha = document.createElement('tr'); //<tr></tr>
 
                 colunaNome = document.createElement('td');//<td></td>
-                colunaNome.innerText = item.nome; //<td>Kaua</td>
-                linha.appendChild(colunaNome); //<tr><td>Kaua</td></tr>
+                colunaNome.innerText = item.nome; //<td>Eduardo</td>
+                linha.appendChild(colunaNome); //<tr><td>Eduardo</td></tr>
 
                 colunaEmail = document.createElement('td');//<td></td>
-                colunaEmail.innerText = item.email; //<td>kaua.deja@gmail.com</td>
-                linha.appendChild(colunaEmail); //<tr><td>Kaua</td><td>kaua.deja@gmail.com</td></tr>
+                colunaEmail.innerText = item.email; //<td>eduardo.almeida@gmail.com</td>
+                linha.appendChild(colunaEmail); //<tr><td>Kaua</td><td>eduardo.almeida@gmail.com</td></tr>
 
                 colunaTelefone = document.createElement('td');//<td></td>
-                colunaTelefone.innerText = item.telefone; //<td>11972084334</td>
-                linha.appendChild(colunaTelefone); //<tr><td>Kaua</td><td>kaua.deja@gmail.com</td><td>11972084334</td></tr>
+                colunaTelefone.innerText = item.telefone; //<td>11999999999</td>
+                linha.appendChild(colunaTelefone); //<tr><td>Eduardo</td><td>eduardo.almeida@gmail.com</td><td>11972084334</td></tr>
 
-                corpoTabela.appendChild(linha); //<tbody><tr><td>Kaua</td><td>kaua.deja@gmail.com</td><td>11972084334</td></tr></tbody>
+                corpoTabela.appendChild(linha); //<tbody><tr><td>Eduardo</td><td>eduardo.almeida@gmail.com</td><td>11972084334</td></tr></tbody>
             });
 
             limparCampos();
